@@ -42,6 +42,8 @@ body {
 .leftside {
   width: 160px;
   float: left;
+  border-radius: 10px;
+  background-size: cover;
 }
 
 .leftside img {
@@ -101,3 +103,16 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* 画像の背景 */
+.bg-fire {
+  background-image: url(../img/bg-fire.gif);
+}
+.bg-water {
+  background-image: url(../img/bg-water.gif);
+}
+.bg-thunder {
+  background-image: url(../img/bg-thunder.gif);
+}
+
+
