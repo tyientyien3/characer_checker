@@ -38,3 +38,14 @@ body {
 #cards.move {
   transform: translate(-1000px, 0);
 }
+
+.leftside {
+  width: 160px;
+  float: left;
+}
+
+.rightside {
+  width: 260px;
+  float: right;
+  text-align: center;
+}
