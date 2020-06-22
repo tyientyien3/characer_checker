@@ -6,6 +6,28 @@
   var retry = document.getElementById('retry');
   
   check.addEventListener('click', function() {
+    var msgs = [
+      '究極の進化を遂げた',
+      '太古より蘇った',
+      '最も恐れられた'
+    ];
+
+    var job = [
+      {name: '勇者', img: 'hero.gif'},
+      {name: '魔法使い', img: 'wizard.gif'},
+      {name: '武闘家', img: 'fighter.gif'}
+    ];
+
+    var job = [
+      {name: 'その炎はすべてを焼き尽くす', img: 'bg-fire'},
+      {name: 'その聖水で全てを浄化する', img: 'bg-water'},
+      {name: 'その雷撃は万物の怒りを鎮める', img: 'bg-thunder'}
+    ];
+
+    function getRandomElement(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+
     cards.className = 'move';
   });
 

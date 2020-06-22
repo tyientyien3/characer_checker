@@ -44,8 +44,60 @@ body {
   float: left;
 }
 
+.leftside img {
+  border-radius: 10px;
+}
+
 .rightside {
   width: 260px;
   float: right;
   text-align: center;
+}
+
+.rightside h1 {
+  margin: 10px 0;
+}
+
+.card input {
+  width: 230px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  background: #35ac64;
+  box-shadow: 0 5px 0 green;
+  color: #fff;
+  line-height: 45px;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+}
+
+#tweet {
+  background: #1da1f2;
+  box-shadow: 0 5px 0 #006dbf;
+  margin-bottom: 20px;
+}
+
+.btn:active {
+  box-shadow: 0 5px 0 #036e03;
+  margin-top: 5px;
+}
+
+#result_name,
+#result_msg,
+#result_job,
+#result_type {
+  font-weight: bold;
+}
+
+#retry {
+  text-decoration: underline;
+  cursor: pointer;
 }
