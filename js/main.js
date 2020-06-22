@@ -36,6 +36,16 @@
 
     tweetUrl = 'https://twitter.com/intent/tweet';
 
+    // これをやればtwitterに自動的に張り付くはず。
+    // tweetUrl = 
+    // 'https://twitter.com/intent/tweet?text=' +
+    // encodeURIComponent(
+    //   userName.value + 'さんは' +
+    //   msg + 
+    //   job.name + 'でした！'
+    //   ) +
+    //   '&hashtags=dotinstall';
+
     var resultImg = document.getElementById('result_img');
 
     function getRandomElement(array) {
