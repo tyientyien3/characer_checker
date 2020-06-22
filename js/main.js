@@ -5,6 +5,8 @@
   var check = document.getElementById('check');
   var retry = document.getElementById('retry');
   var userName = document.getElementById('user_name');
+  var tweet = document.getElementById('tweet');
+  var tweetUrl;
 
   // 名前入力画面にカーソルが元々当たっているようにする
   userName.focus();
@@ -32,6 +34,8 @@
     var job;
     var type;
 
+    tweetUrl = 'https://twitter.com/intent/tweet';
+
     var resultImg = document.getElementById('result_img');
 
     function getRandomElement(array) {
@@ -56,8 +60,8 @@
     setTextContent('result_job', job.name);
     resultImg.children[0].src = 'img/' + job.img;
     setTextContent('result_type', type.name);
-
     resultImg.className = 'leftside ' + type.img;
+    tweet.href = tweetUrl;
 
     cards.className = 'move';
   });
